@@ -1,12 +1,17 @@
 import './App.css'
+import About from './components/about/About'
+import Dishes from './components/dishes/Dishes'
+import Hero from './components/hero/Hero'
 
 function App() {
 
   return (
     <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='app text-white'>
+    <Hero />
+    <Dishes />
+    <About />
+    </div>
     </>
   )
 }
