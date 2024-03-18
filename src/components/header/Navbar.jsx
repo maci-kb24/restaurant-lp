@@ -18,7 +18,7 @@ const Navbar = () => {
             <ul className="flex">
               {navlinks.map((link, index) => (
                 <li className="ml-12" key={index}>
-                  <a className="uppercase font-extrabold" href={link.url}>{link.title}</a>
+                  <a className="uppercase font-extrabold hover:text-yellow-500" href={link.url}>{link.title}</a>
                 </li>
               ))}
             </ul>

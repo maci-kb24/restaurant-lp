@@ -1,7 +1,9 @@
 import './App.css'
 import About from './components/about/About'
+import Cta from './components/cta/Cta'
 import Dishes from './components/dishes/Dishes'
 import Hero from './components/hero/Hero'
+import Reservation from './components/reservation/Reservation'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
     <Hero />
     <Dishes />
     <About />
+    <Cta />
+    <Reservation />
     </div>
     </>
   )
