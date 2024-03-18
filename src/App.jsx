@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/about/About'
+import Chefs from './components/chefs/Chefs'
 import Cta from './components/cta/Cta'
 import Dishes from './components/dishes/Dishes'
 import Hero from './components/hero/Hero'
@@ -14,6 +15,7 @@ function App() {
     <Dishes />
     <About />
     <Cta />
+    <Chefs />
     <Reservation />
     </div>
     </>
