@@ -1,4 +1,4 @@
-import banner from "../../assets/images/bg-pattern.jpg";
+import bgPattern from "../../assets/images/bg-pattern.jpg";
 import bgTitle from "../../assets/images/bg-title.png";
 import chefIcon from "../../assets/images/advantage-1.png";
 import recipeIcon from "../../assets/images/advantage-2.png";
@@ -7,9 +7,9 @@ import ingredientIcon from "../../assets/images/advantage-3.png";
 
 const About = () => {
   return (
-    <div
-      className="about bg-repeat py-24"
-      style={{ backgroundImage: `url(${banner})` }}
+    <div id="about"
+      className=" bg-repeat py-24"
+      style={{ backgroundImage: `url(${bgPattern})` }}
     >
       <div className="custom-container">
         <div className="flex gap-12">

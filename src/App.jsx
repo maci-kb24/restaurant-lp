@@ -5,7 +5,8 @@ import Cta from './components/cta/Cta'
 import Dishes from './components/dishes/Dishes'
 import Footer from './components/footer/Footer'
 import Hero from './components/hero/Hero'
-import BookTable from './components/booktable/BookTable'
+import BookingTable from './components/booking/BookingTable'
+import Gallery from './components/gallery/Gallery'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
     <About />
     <Cta />
     <Chefs />
-    <BookTable />
+    <Gallery />
+    <BookingTable />
     <Footer />
     </div>
     </>

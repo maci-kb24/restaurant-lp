@@ -52,7 +52,7 @@ const chefs = [
 
 const Chefs = () => {
   return (
-    <div className="chefs bg-black">
+    <div id="chefs" className="bg-black">
       <div className="custom-container py-20">
         <div className="text-center">
           <h1 className="flex justify-center items-center text-4xl font-extrabold mb-4 uppercase chefs-title">
