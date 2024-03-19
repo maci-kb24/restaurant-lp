@@ -3,8 +3,9 @@ import About from './components/about/About'
 import Chefs from './components/chefs/Chefs'
 import Cta from './components/cta/Cta'
 import Dishes from './components/dishes/Dishes'
+import Footer from './components/footer/Footer'
 import Hero from './components/hero/Hero'
-import Reservation from './components/reservation/Reservation'
+import BookTable from './components/booktable/BookTable'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
     <About />
     <Cta />
     <Chefs />
-    <Reservation />
+    <BookTable />
+    <Footer />
     </div>
     </>
   )

@@ -1,8 +1,8 @@
 
-const Reservation = () => {
+const BookTable = () => {
   return (
     <div id="reservation">This is Reservation</div>
   )
 }
 
-export default Reservation
+export default BookTable
