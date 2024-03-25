@@ -3,6 +3,7 @@ import bgTitle from "../../assets/images/bg-title.png";
 import chefIcon from "../../assets/images/advantage-1.png";
 import recipeIcon from "../../assets/images/advantage-2.png";
 import ingredientIcon from "../../assets/images/advantage-3.png";
+import AboutBig from "../../assets/images/about-big.jpg";
 
 
 const About = () => {
@@ -13,10 +14,10 @@ const About = () => {
     >
       <div className="custom-container">
         <div className="flex gap-12">
-          <div className="about-img">
-            <img src="https://via.placeholder.com/400x700" />
+          <div className="about-img w-2/5">
+            <img src={AboutBig} />
           </div>
-          <div className="about-content">
+          <div className="about-content ">
             <div className="flex">
               <img src={bgTitle} />
               <h2 className="about-title uppercase text-4xl font-extrabold">
@@ -47,12 +48,10 @@ const About = () => {
                 Indulge in our delectable dishes crafted with care and passion,
                 guaranteed to leave a lasting impression on your palate and
                 uplift your spirits. With every bite, savor the goodness that
-                nourishes not only your body but also your soul. Welcome to a
-                world where good food translates into all-day good vibes. Your
-                journey to culinary bliss begins here.
+                nourishes not only your body but also your soul.
               </p>
             </div>
-            <div className="about-icons">
+            <div className="about-icons mt-16">
                 <div className="flex justify-evenly uppercase font-bold">
                 <div>
                     <img className="mx-auto" src={chefIcon} />

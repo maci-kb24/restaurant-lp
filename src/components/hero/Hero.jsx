@@ -14,7 +14,7 @@ const Hero = () => {
                 <h2>Discover the best foods from over 1,000 restaurants and fast delivery to your doorstep.Explore Our Menu, Book Your Table, and Embark on a Gastronomic Adventure</h2>
             </div>
             <div className='hero-btn mt-7'>
-                <Button>Book A Table</Button>
+                <Button href='#booking-table'>Book A Table</Button>
             </div>
           </div>
         </div>
