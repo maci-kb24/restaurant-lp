@@ -1,23 +1,23 @@
 
 import PropTypes from 'prop-types';
 
-const DishCard = ({ dishes }) => {
+const DishCard = ({ dish }) => {
   return (
     <div className="dish-card">
-        <div>
-            <img src={dishes.image} />
+        <div className='mb-5'>
+            <img src={dish.image} />
         </div>
-        <div>
-            <h3>{dishes.title}</h3>
-            <p>{dishes.description}</p>
-            <p>{dishes.price}$</p>
+        <div className='text-center'>
+            <h3 className='uppercase font-bold mb-5'>{dish.title}</h3>
+            <p className='text-gray-300 mb-5'>{dish.description}</p>
+            <p className='text-yellow-500 font-extrabold text-xl'>${dish.price}$</p>
         </div>
     </div>
   )
 }
 
 DishCard.propTypes = {
-  dishes: PropTypes.shape({
+  dish: PropTypes.shape({
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
