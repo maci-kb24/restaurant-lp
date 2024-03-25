@@ -7,22 +7,22 @@ import Footer from './components/footer/Footer'
 import Hero from './components/hero/Hero'
 import BookingTable from './components/booking/BookingTable'
 import Gallery from './components/gallery/Gallery'
+import Menu from './components/menu/Menu'
 
 function App() {
 
   return (
-    <>
     <div className='app text-white'>
-    <Hero />
-    <Dishes />
-    <About />
-    <Cta />
-    <Chefs />
-    <Gallery />
-    <BookingTable />
-    <Footer />
+      <Hero />
+      <Dishes />
+      <About />
+      <Cta />
+      <Chefs />
+      <Menu />
+      <Gallery />
+      <BookingTable />
+      <Footer />
     </div>
-    </>
   )
 }
 

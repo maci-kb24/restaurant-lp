@@ -24,7 +24,7 @@ const info = [
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact py-24">
       <div className="flex justify-center">
         <img src={bgTitle} />
         <h2 className="about-title uppercase text-4xl font-extrabold">
@@ -38,7 +38,7 @@ const Contact = () => {
               <div key={index} className="flex gap-4">
                 <i className={`${item.icon} text-3xl text-gray-300`}></i>
                 <div>
-                  <h3 className="font-extrabold text-4xl">{item.title}</h3>
+                  <h3 className="font-extrabold text-xl">{item.title}</h3>
                   <p className="text-gray-300">{item.description}</p>
                 </div>
               </div>

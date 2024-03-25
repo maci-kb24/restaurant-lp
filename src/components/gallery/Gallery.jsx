@@ -1,42 +1,36 @@
 import bgTitle from "../../assets/images/bg-title.png";
+import Gallery1 from "../../assets/images/gallery-1.jpg";
+import Galery2 from "../../assets/images/gallery-2.jpg";
+import Galery3 from "../../assets/images/gallery-3.jpg";
+import Galery4 from "../../assets/images/gallery-4.jpg";
+import Galery5 from "../../assets/images/gallery-5.jpg";
+import Galery6 from "../../assets/images/gallery-6.jpg";
 
 const galleryData = [
   {
     id: 1,
-    img: "https://via.placeholder.com/393x260",
+    img: Gallery1,
   },
   {
     id: 2,
-    img: "https://via.placeholder.com/393x260",
+    img: Galery2,
   },
   {
     id: 3,
     title: "Gallery 3",
-    img: "https://via.placeholder.com/393x260",
+    img: Galery3,
   },
   {
     id: 4,
-    img: "https://via.placeholder.com/393x260",
+    img: Galery4,
   },
   {
     id: 5,
-    img: "https://via.placeholder.com/393x260",
+    img: Galery5,
   },
   {
     id: 6,
-    img: "https://via.placeholder.com/393x260",
-  },
-  {
-    id: 7,
-    img: "https://via.placeholder.com/393x260",
-  },
-  {
-    id: 8,
-    img: "https://via.placeholder.com/393x260",
-  },
-  {
-    id: 9,
-    img: "https://via.placeholder.com/393x260",
+    img: Galery6,
   },
 ]
 
@@ -55,8 +49,8 @@ const Gallery = () => {
         <div className="custom-container px-3">
           <div className="grid grid-cols-1 md:grid-cols-3">
             {galleryData.map((item) => (
-              <div key={item.id} className="gallery-item">
-                <img src={item.img} alt="gallery" />
+              <div key={item.id} className="gallery-item hover:cursor-pointer">
+                <img src={item.img} alt="gallery" className=" hover:brightness-50" />
               </div>
             ))}
           </div>
@@ -64,5 +58,6 @@ const Gallery = () => {
     </div>
   )
 }
+
 
 export default Gallery

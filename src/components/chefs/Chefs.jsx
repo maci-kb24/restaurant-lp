@@ -1,53 +1,35 @@
 import ChefCard from "./ChefCard";
-
-const chefImg = "https://via.placeholder.com/300";
+import bgTitle from "../../assets/images/bg-title.png";
+import chef1 from "../../assets/images/chef-1.jpg";
+import chef2 from "../../assets/images/chef-2.jpg";
+import chef3 from "../../assets/images/chef-3.jpg";
+import chef4 from "../../assets/images/chef-4.jpg";
 
 const chefs = [
   {
     id: 1,
     name: "RICHARD NAUZ",
-    image: chefImg,
+    image: chef1,
     title: "food chef",
-    social: {
-      facebook: "https://facebook.com",
-      twitter: "https://twitter.com",
-      instagram: "https://instagram.com",
-    },
   },
   {
     id: 2,
     name: "OLIVIA GROSH",
-    image: chefImg,
+    image: chef2,
     title: "food chef",
-    social: {
-      facebook: "https://facebook.com",
-      twitter: "https://twitter.com",
-      instagram: "https://instagram.com",
-    },
   },
   {
     id: 3,
     name: "JEREMY WHITE",
-    image: chefImg,
+    image: chef3,
     title: "food chef",
-    social: {
-      facebook: "https://facebook.com",
-      twitter: "https://twitter.com",
-      instagram: "https://instagram.com",
-    },
   },
   {
     id: 4,
     name: "HOWARD HOLMES",
-    image: chefImg,
+    image: chef4,
     title: "food chef",
-    social: {
-      facebook: "https://facebook.com",
-      twitter: "https://twitter.com",
-      instagram: "https://instagram.com",
-    },
   },
-  
 ];
 
 const Chefs = () => {
@@ -55,15 +37,18 @@ const Chefs = () => {
     <div id="chefs" className="bg-black">
       <div className="custom-container py-20">
         <div className="text-center">
-          <h1 className="flex justify-center items-center text-4xl font-extrabold mb-4 uppercase chefs-title">
-            Our Best Chefs
-          </h1>
-          <p className=" max-w-prose mx-auto">
+          <div className="flex justify-center mb-[40px]">
+            <img src={bgTitle} />
+            <h1 className="flex justify-center items-center text-4xl font-extrabold mb-4 uppercase chefs-title">
+              Our Best Chefs
+            </h1>
+          </div>
+          <p className=" text-gray-300 max-w-prose mx-auto mb-[40px]">
             Our chefs are the best in the world. They are passionate about their
             work and they are always ready to create the best dishes for you.
           </p>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-evenly md:flex-row flex-col gap-8 items-center">
           {chefs.map((chef) => (
             <ChefCard chefs={chef} key={chef.id} />
           ))}
