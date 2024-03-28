@@ -5,7 +5,7 @@ import Header from '../header/Header'
 
 const Hero = () => {
   return (
-    <div className="hero min-h-[140vh] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${banner})`}}>
+    <div id="hero" className=" min-h-[140vh] bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${banner})`}}>
         <Header />
         <div className='hero-content '>
           <div className='custom-container ml-auto'>

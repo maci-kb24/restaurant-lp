@@ -2,7 +2,6 @@ import Logo from "./Logo"
 import Navbar from "./Navbar"
 import  { useState, useEffect } from 'react';
 
-
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -26,11 +25,10 @@ const Header = () => {
 
   return (
     <div className="header z-50 fixed w-full top-0 left-0 py-4" style={headerStyle}>
-     <div className="custom-container flex justify-between items-center">
+     <div className="custom-container flex justify-between items-center relative">
       <Logo />
-      <Navbar />
+      <Navbar  />
      </div>
-        
     </div>
   )
 }

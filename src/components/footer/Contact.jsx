@@ -24,7 +24,7 @@ const info = [
 
 const Contact = () => {
   return (
-    <div className="contact py-24">
+    <div id="contact" className="py-24">
       <div className="flex justify-center">
         <img src={bgTitle} />
         <h2 className="about-title uppercase text-4xl font-extrabold">
