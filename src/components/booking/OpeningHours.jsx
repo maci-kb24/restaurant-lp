@@ -1,7 +1,7 @@
 
 const OpeningHours = () => {
   return (
-         <div className="opening-hours bg-black p-7 w-2/6">
+         <div className="opening-hours bg-black p-7 w-full  md:w-2/6">
           <div>
             <h3 className="uppercase text-3xl font-bold pt-4">Opening Hours</h3>
             <p className="text-gray-300 mt-5">

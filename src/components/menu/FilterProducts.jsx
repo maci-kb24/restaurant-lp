@@ -7,7 +7,7 @@ const FilterProducts = ({ onSelectFilter }) => {
   };
 
   return (
-    <div className="my-10 flex justify-evenly">
+    <div className="my-10 flex justify-around md:justify-evenly flex-wrap">
       <Button onClick={() => handleFilterClick("all")}>All</Button>
       <Button onClick={() => handleFilterClick("burgers")}>Burgers</Button>
       <Button onClick={() => handleFilterClick("pizzas")}>Pizzas</Button>

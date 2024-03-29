@@ -16,9 +16,9 @@ const BookTable = () => {
           BOOK A TABLE
         </h2>
       </div>
-      <div className="custom-container flex gap-8">
+      <div className="custom-container flex gap-8 flex-col md:flex-row">
         <BookingForm />
-       <OpeningHours />
+        <OpeningHours />
       </div>
     </div>
   );

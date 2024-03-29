@@ -21,7 +21,7 @@ const BookingForm = () => {
   };
 
   return (
-        <div className="booking-form w-8/12">
+        <div className="booking-form w-full md:w-8/12">
           <form onSubmit={handleSubmit} className=" p-5 text-yellow-500 uppercase font-bold text-[12px]">
             <div className="flex gap-6 form-group">
               <div className="form-item flex-1">
@@ -43,7 +43,7 @@ const BookingForm = () => {
                 <input value={form.email} onChange={handleChange} className="px-4 py-2 h-16 w-full rounded bg-black border-black	border" placeholder="Email" type="email" id="email" name="email" />
               </div>
             </div>
-            <div className="flex form-group gap-6 mt-5">
+            <div className="flex form-group gap-6 mt-5 flex-wrap">
               <div className="form-item flex-1">
                 <label htmlFor="date" className="pb-2 inline-block">Date</label>
                 <input className="px-4 py-2 h-16 w-full rounded bg-black border-black	border" type="date" id="date" name="date" />
