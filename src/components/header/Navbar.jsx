@@ -37,7 +37,7 @@ const Navbar = () => {
             {isNavOpen ? <IoMdClose size={35} fontWeight={'900'} /> : <RxHamburgerMenu size={25} />}
         </button>
     </div>
-    <div className={`mobile-nav md:hidden flex fixed top-0 ${isNavOpen ? 'bg-black' : 'md:bg-transparent'}  p-8 h-full w-80`}>
+    <div className={`mobile-nav md:hidden flex fixed top-0 left-0 ${isNavOpen ? 'bg-black' : 'md:bg-transparent'}  p-8 h-full w-80`}>
         {isNavOpen && (
           <ul className="flex flex-col">
             {navlinks.map((link, index) => (

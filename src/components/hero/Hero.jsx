@@ -1,4 +1,3 @@
-
 import banner from '../../assets/images/bg-header.png'
 import Button from '../Button'
 import Header from '../header/Header'

@@ -1,26 +1,46 @@
+import { useState } from 'react';
+
+const initialForm = {
+  email: '',
+  phone: '',
+  name: '',
+  lastname: ''
+};
 
 const BookingForm = () => {
+  const [form, setForm] = useState(initialForm);
+
+  const handleChange = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setForm(initialForm);
+    alert(form.email + ' ' + form.phone + ' ' + form.name + ' ' + form.lastname);
+  };
+
   return (
         <div className="booking-form w-8/12">
-          <form className=" p-5 text-yellow-500 uppercase font-bold text-[12px]">
+          <form onSubmit={handleSubmit} className=" p-5 text-yellow-500 uppercase font-bold text-[12px]">
             <div className="flex gap-6 form-group">
               <div className="form-item flex-1">
                 <label htmlFor="name" className="pb-2 inline-block">Name</label>
-                <input className="px-4 py-2 h-16 w-full rounded bg-black border border-black" placeholder="Name" type="text" id="name" name="name" />
+                <input value={form.name} onChange={handleChange} className="px-4 py-2 h-16 w-full rounded bg-black border border-black" placeholder="Name" type="text" id="name" name="name" />
               </div>
               <div className="form-item flex-1">
                 <label htmlFor="lastname" className="pb-2 inline-block">Last Name</label>
-                <input  className="px-4 py-2 h-16 w-full rounded bg-black border border-black" placeholder="Last Name" type="text" id="lastname" name="lastname" />
+                <input value={form.lastname} onChange={handleChange}  className="px-4 py-2 h-16 w-full rounded bg-black border border-black" placeholder="Last Name" type="text" id="lastname" name="lastname" />
               </div>
             </div>
             <div className="flex gap-6 form-group mt-5">
               <div className="form-item flex-1">
                 <label htmlFor="date" className="pb-2 inline-block">Phone</label>
-                <input className="px-4 py-2 h-16 w-full rounded bg-black border border-black" placeholder="Phone" type="number" id="phone" name="phone" />
+                <input value={form.phone} onChange={handleChange} className="px-4 py-2 h-16 w-full rounded bg-black border border-black" placeholder="Phone" type="number" id="phone" name="phone" />
               </div>
               <div className="form-item flex-1">
                 <label htmlFor="time" className="pb-2 inline-block">Email</label>
-                <input className="px-4 py-2 h-16 w-full rounded bg-black border-black	border" placeholder="Email" type="email" id="email" name="email" />
+                <input value={form.email} onChange={handleChange} className="px-4 py-2 h-16 w-full rounded bg-black border-black	border" placeholder="Email" type="email" id="email" name="email" />
               </div>
             </div>
             <div className="flex form-group gap-6 mt-5">
